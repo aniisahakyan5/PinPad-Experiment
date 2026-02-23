@@ -264,8 +264,24 @@ input[type="text"]:focus {
 }
 
 .btn-secondary {
-  /* Hidden for this experiment version */
-  display: none !important;
+  display: inline-block;
+  padding: 12px 24px;
+  background: transparent;
+  color: var(--text-secondary);
+  border: 1.5px solid rgba(0, 190, 213, 0.3);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  margin-top: 12px;
+}
+
+.btn-secondary:hover {
+  color: var(--text-primary);
+  border-color: var(--accent);
+  background: rgba(0, 190, 213, 0.08);
 }
 
 .btn-group {

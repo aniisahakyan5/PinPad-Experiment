@@ -196,6 +196,10 @@
         showScreen('pinpad');
     });
 
+    btnViewResults.addEventListener('click', () => {
+        window.location.hash = '#/results';
+    });
+
     document.querySelectorAll('.pin-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             const action = btn.dataset.action;
