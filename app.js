@@ -32,6 +32,7 @@
 
     const nameInput = document.getElementById('name-input');
     const btnStart = document.getElementById('btn-start');
+    const btnViewResults = document.getElementById('btn-view-results');
     const pinpadReminder = document.getElementById('pinpad-reminder');
     const pinDots = document.querySelectorAll('.pin-dot');
     const pinDisplay = document.getElementById('pin-display');
