@@ -394,14 +394,12 @@ input[type="text"]:focus {
   border-color: rgba(0, 255, 188, 0.2);
 }
 
-/* ---- Result Summary (Hidden) ---- */
-.result-summary {
-  display: none !important;
-}
-
-/* ---- Results Table (Hidden) ---- */
+/* ---- Result Summary & Table ---- */
+/* These are contained within screens that are hidden by default */
 .results-card {
-  display: none !important;
+  max-width: 600px;
+  max-height: 85vh;
+  overflow-y: auto;
 }
 
 /* ---- Shake Animation ---- */

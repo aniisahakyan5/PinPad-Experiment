@@ -205,6 +205,24 @@
         });
     });
 
-    btnBack.addEventListener('click', () => showScreen('name'));
+    btnBack.addEventListener('click', () => {
+        window.location.hash = '';
+        showScreen('name');
+    });
+
+    // ---- Hash Routing for Results ----
+    function handleHashChange() {
+        if (window.location.hash === '#/results') {
+            renderResults();
+            showScreen('results');
+        } else if (screens.results.classList.contains('active')) {
+            showScreen('name');
+        }
+    }
+
+    window.addEventListener('hashchange', handleHashChange);
+
+    // Check initial hash on load
+    handleHashChange();
 
 })();
